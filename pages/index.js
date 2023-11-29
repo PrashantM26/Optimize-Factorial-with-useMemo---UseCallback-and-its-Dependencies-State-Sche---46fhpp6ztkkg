@@ -13,7 +13,7 @@ export default function Home() {
         <input 
           type="number" 
           value={inputNumber}
-          onChange={(e)=>{setInputNumber(e.target.value)}
+          onChange={(e)=>{setInputNumber(e.target.value)}}
           placeholder="Enter a number" 
         />
         <FactorialComponent number={inputNumber} />
