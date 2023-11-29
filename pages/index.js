@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import FactorialComponent from '../components/FactorialComponent';
 
 export default function Home() {
-  const [inputNumber, setInputNumber] = useState(6);
+  const [inputNumber, setInputNumber] = useState(5);
 
   return (
     <div>
