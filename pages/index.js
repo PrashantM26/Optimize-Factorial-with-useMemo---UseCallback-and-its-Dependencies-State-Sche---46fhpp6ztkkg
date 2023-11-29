@@ -3,11 +3,7 @@ import React, { useState } from 'react';
 import FactorialComponent from '../components/FactorialComponent';
 
 export default function Home() {
-  const [inputNumber, setInputNumber] = useState(21);
-
-  const handleInputChange = (e) => {
-    setInputNumber(e.target.value);
-  };
+  const [inputNumber, setInputNumber] = useState(5);
 
   return (
     <div>
@@ -17,7 +13,7 @@ export default function Home() {
         <input 
           type="number" 
           value={inputNumber}
-          onChange={handleInputChange}
+          onChange={(e)=>{setInputNumber(e.target.value)}
           placeholder="Enter a number" 
         />
         <FactorialComponent number={inputNumber} />
