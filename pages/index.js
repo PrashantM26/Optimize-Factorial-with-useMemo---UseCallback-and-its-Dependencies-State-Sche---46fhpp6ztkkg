@@ -6,8 +6,7 @@ export default function Home() {
   const [inputNumber, setInputNumber] = useState(0);
 
   const handleInputChange = (e) => {
-    const newNumber = parseInt(e.target.value, 10);
-    setInputNumber(isNaN(newNumber) ? 0 : newNumber);
+    setInputNumber(e.target.value);
   };
 
   return (
